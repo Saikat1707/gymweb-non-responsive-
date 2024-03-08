@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Josefin+Sans:wght@300;400;700&family=Poppins:wght@300;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* top navbar css*/
+#topnavbar{
+    background-color: #66fcf1;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#topnavitems{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#topnavitems1{
+    margin-top: 15px;
+}
+#topnavitems3{
+    font-size: 20px;
+}
+#topnavitems3>i{
+    margin-left: 20px;
+}
+
+/* navbar css */
+#navbar{
+    background-color: black !important;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+#navitems>li>a{
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.4s ease-in-out,transform 0.4s ease-in-out, border-bottom 0s ease-in-out;
+}
+#navitems>li>a:hover{
+    color: #66fcf1;
+    transform: translateY(-10%);
+    border-bottom: 3px solid #66fcf1; 
+}
+#navitems{
+    margin-left: 300px;
+}
+#navlogo{
+    font-size: 25px !important;
+    font-family: 'Anton';
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white !important;
+}
+#navlogo span{
+    font-size: 25px !important;
+    font-family: 'Anton';
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #66fcf1;
+}
+
+/* hero css */
+#hero{
+    background-image: url('herobackgroundclone.jpg');
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+
+}
+/* hero text css */
+#herotext{
+    width: 100%;
+    height: 100%;
+}
+#herotextleft{
+    color: white;
+    margin-left: 30px;
+}
+#herotextleft1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+}
+#herotextleft2{
+    color: #c5c6c7;
+}
+
+#herotextright1{
+    color: #66fcf1;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+#herotextright2{
+    margin-top: 40px;
+}
+#playstore i{
+    color: white;
+    font-size: 30px;
+}
+#appstore i{
+    color: white;
+    font-size: 30px;
+}
+#playstore p{
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#playstore{
+    border: 2px solid #17a2b8;
+    width: 200px;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+#appstore p{
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#appstore{
+    border: 2px solid #17a2b8;
+    width: 200px;
+    transition: all 0.1s ease-in-out;
+}
+#playstore:hover{
+    background-color: #17a2b8;
+    border: 2px solid white;
+}
+#appstore:hover{
+    background-color: #17a2b8;
+    border: 2px solid white;
+}
+/* service css */
+#service2{
+    background-image: url('oursevices1.jpg');
+    width: 300px;
+    height: 300px;
+}
+#service3{
+    background-image: url('oursevices2.jpg');
+    width: 300px;
+    height: 300px;
+}
+#service4{
+    background-image: url('ourservices3.jpg');
+    width: 300px;
+    height: 300px;
+}
+#service5{
+    background-image: url('oursevices4.jpg');
+    width: 300px;
+    height: 300px;
+}
+#service6{
+    background-image: url('ourservices5.jpg');
+    width: 300px;
+    height: 300px;
+}
+.service{
+    margin-top: 20px !important;
+    position: relative;
+}
+.service:not(#service1):after{
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+#ourservicesmain{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#service1-text1{
+    font-size: 40px;
+    font-family: 'Anton';
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+#service1-text2{
+    font-weight: 600;
+}
+#allservicetext1{
+    font-weight: 600;
+    color: #66fcf1;
+    z-index: 1;
+}
+#allservicetext2{
+    font-weight: 600;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.service:hover #allservicetext2 {
+    opacity: 1;
+}
+.service:hover #allservicetext1{
+    color: #dfa538;
+}
+/* why us  */
+
+#whyusmain{
+    background-image: url('whyusbg.jpg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+    /* margin-bottom: 40px; */
+}
+#whyusmain::after{
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: contrast(60%) brightness(80%);
+}
+#whyustext1{
+    color: #66fcf1;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 40px;
+}
+#whyustext2{
+    color: white !important;
+    z-index: 1;
+}
+#whyussubmain{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+}
+#whyussubtext1 p{
+    color: white;
+    font-weight: 600;
+    color: #d49013;
+}
+#whyussubtext{
+    height: 100%;
+    width: 100%;
+}
+.recomendbox{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #17a2b8;
+    border-style: dashed;
+    transition: all 0.4s ease-in-out;
+}
+.qualitybox{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #17a2b8;
+    border-style: dashed;
+    transition: all 0.4s ease-in-out;
+}
+.recomendbox p{
+    font-size: 40px;
+    font-weight: 600;
+}
+.qualitybox p{
+    font-size: 40px;
+    font-weight: 600;
+}
+.recomendbox:hover{
+    background-color: black;
+}
+.qualitybox:hover{
+    background-color: black;
+}
+
+
+/* trainers css */
+#trainersmain{
+    background-image: url('trainersbg.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    
+}
+#trainersmain::after{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#trainersmain>p{
+    color: #66fcf1;
+    font-size: 40px;
+    font-weight: 600;
+    z-index: 1;
+}
+#trainersubmain{
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+}
+#trainer1 img{
+    border: 3px solid #66fcf1;
+    transition: all 0.4s ease-in-out;
+}
+#trainer2 img{
+    border: 3px solid #66fcf1;
+    transition: all 0.4s ease-in-out;
+}
+.trainertext{
+    color: #c5c6c7;
+    margin-left: 20px;
+}
+.trainertext1{
+    color: #4ed8ed;
+    font-size: 20px;
+    font-weight: 600;
+}
+#trainer1{
+    height: 350px;
+    
+}
+#trainer2{
+    height: 350px;
+}
+#trainer1:hover img{
+    transform: scale(1.05)
+}
+#trainer2:hover img{
+    transform: scale(1.05)
+}
+.trainertext2{
+    transition: all 0.4s ease-in-out;
+}
+#trainer2:hover .trainertext2{
+    color: white;
+}
+#trainer1:hover .trainertext2{
+    color: white;
+}
+#aboutusmain{
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#aboutussubmain{
+    width: 100%;
+    height: 100%;
+}
+.aboutus{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+.fitnessfreek{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+}
+.aboutustext{
+    font-weight: 600;
+    color: black;
+}
+#aboutus1{
+    line-height: 30px;
+}
+@keyframes anime{
+    0%{
+        transform: translateY(-3%);
+    }
+    100%{
+        transform: translateY(3%);
+    }
+}
+#aboutus2 img{
+    margin-left: 20px;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+    animation: anime 2s ease-in-out infinite alternate forwards;
+}
+#aboutus2{
+    margin-left: 60px;
+}
+
+#designmain{
+    width: 100%;
+    height: 500px;
+}
+#designsubmain{
+    height: 100%;
+    width: 100%;
+}
+#design1{
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+#design2{
+    /* background-color: rgba(23, 162, 184, 0.6); */
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+#design1::after{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#design2::after{
+    content: "";
+    background-color: #17a2b8;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.designtexts1{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-weight: 600;
+}
+.designtexts2{
+    color: black;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+}
+#designsubmain img{
+    position: absolute;
+    left: 75%;
+}
+.designedfor{
+    font-size: 30px;
+    color: #66fcf1;
+    /* text-shadow: 6px 7px 10px black; */
+}
+.designtexts2 p{
+    color: black;
+    font-weight: 600;
+}
+#footermain{
+    width: 100%;
+    height: 80px;
+}
+#footersubmain{
+    width: 100%;
+    height: 100%;
+    background-color: #17a2b8;
+    border-top: 2px solid #c5c6c7;
+}
+#footerlinks a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
+
+}
+#footerin{
+    height: 100%;
+    width: 60%;
+}
+#footerlinks a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+/* copy right css */
+#copyrightmain{
+    height: 40px;
+    width: 100%;
+}
+#copyrightsubmain{
+    height: 100%;
+    width: 100%;
+    background-color: #0d6674;
+}
+#copyrighttext p{
+    color: white;
+    /* font-weight: 600; */
+}
